@@ -83,11 +83,24 @@
           </div>
 
           <div class="hero-image-box">
-            <img
+            <picture>
+              <source srcset="/img/hero.webp" type="image/webp" />
+              <source srcset="/img/hero.png" type="image/png" />
+
+              <img
+                src="img/hero.png"
+                alt="Woman enjoying food, meals in storage
+              container, and food bowls on a table"
+                class="hero-image"
+              />
+              <!-- fallback should define with <img src="" /> -->
+            </picture>
+
+            <!-- <img
               src="img/hero.png"
               alt="Woman enjoying food, meals in storage container, and food bowls on a table"
               class="hero-image"
-            />
+            /> -->
           </div>
         </div>
       </section>
